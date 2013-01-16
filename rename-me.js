@@ -60,6 +60,17 @@ var numberFunction = function (num) {
 	return 	totalPlayers;
 };
 
+
+//"string function" implementation
+var stringFunction = function (a,b) {
+	
+	//local variables
+	var mainChar = "Chellindae ",
+		firstPart = "hides and " +a,
+		secondPart = " into her " + b,
+		thirdPart = " for a resurrection scroll.";
+	return mainChar + firstPart + secondPart + thirdPart;
+};
 //---------------------------------------------------------------
 
 //calls first procedure, 1 argument
@@ -76,3 +87,4 @@ console.log(numberFunctionRt);
 
 //calls string function, 2 arguments --> verb and location and catches the returned string
 var stringFunctionRt = stringFunction("looks","backpack");
+console.log(stringFunctionRt);
