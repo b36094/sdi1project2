@@ -45,9 +45,9 @@ var firstBosses = function (boss1,boss2){
 //"number function" implementation
 var numberFunction = function (num) {
 	//local vars
-	var boss = "the Drakonian beast",
+	var boss = "the drakonian beast",
 		totalPlayers = playerNum;
-	console.log("But while they were celebrating their victory, the "+boss);
+	console.log("But while they were celebrating their victory,"+boss);
 	console.log("appeared from nowhere, furiously attacking the group.");
 	
 	while (totalPlayers > 1 ) {
@@ -69,12 +69,13 @@ var stringFunction = function (a,b) {
 		firstPart = "hides and " +a,
 		secondPart = " into her " + b,
 		thirdPart = " for a resurrection scroll.";
+	
 	return mainChar + firstPart + secondPart + thirdPart;
 };
 //---------------------------------------------------------------
 
 //calls first procedure, 1 argument
-firstProcedure(2);
+var firstProcedureRt = firstProcedure(2);
 
 
 //calls boolean function, 2 arguments and catches the return value into the var. "FirstBossesRt"
