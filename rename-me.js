@@ -1,7 +1,7 @@
 //Andrei Birsan
 //1-16-2013
 //SDI 1
-//Story Title: "The adventures of mount Murrat." 
+//Story Title: "The Adventures of Mount Murrat." 
 
 //initial variables----------------------------------------------
 var groupNames = ["Andreies"," Porktornado"," Chellindae"," TheUglyStick"], 
@@ -56,7 +56,7 @@ var numberFunction = function (num) {
 		totalPlayers--;
 				
 	}
-	console.log("Chellindae is the only player left alive.");	
+	
 	return 	totalPlayers;
 };
 
@@ -80,11 +80,11 @@ var firstProcedureRt = firstProcedure(2);
 
 //calls boolean function, 2 arguments and catches the return value into the var. "FirstBossesRt"
 var firstBossesRt = firstBosses("Anael","Grotesk");
-
+console.log("It is "+firstBossesRt, "that the first bosses are defeated.");
 
 //calls number function, 1 argument --> playerNum and catches the number of players left alive
 var numberFunctionRt = numberFunction(playerNum);
-console.log(numberFunctionRt);
+console.log("The number of players still alive is: "+numberFunctionRt);
 
 //calls string function, 2 arguments --> verb and location and catches the returned string
 var stringFunctionRt = stringFunction("looks","backpack");
