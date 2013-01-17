@@ -17,9 +17,9 @@ var groupNames = [" Andreies"," Porktornado"," TheUglyStick"," Chellindae"],
 	//output first line of story
 	console.log("Welcome to the game:\""+storyTitle,"\"");	
 	console.log("There are " + playerNum, "players in the game: " + groupNames,".");
-	//checks to see if the parameter "a" is a number	
-	if (!isNaN(a)) {
-		console.log("The Mount Murrat has " + a, "level/s.");	
+	//checks to see if the parameter "num" is a number	
+	if (!isNaN(num)) {
+		console.log("The Mount Murrat has " + num, "level/s.");	
 	}
 	else {
 		console.log("The Mount Murrat has no level/s. Please specify the level number.");	
@@ -36,7 +36,7 @@ var firstBosses = function (boss1,boss2){
 		return true;	
 	}
 	else {
-		console.log("They entered the 'Chamber of Water'. A dangerous path lays before them.");
+		console.log("They entered the 'Chamber of Water'. A dangerous path lies before them.");
 		return false;	
 	}		
 };
@@ -100,7 +100,7 @@ var firstProcedureRt = firstProcedure(2);
 
 //calls boolean function, 2 arguments --> boss1, boss2
 var firstBossesRt = firstBosses("Anael","Grotesk");
-console.log("It is "+ firstBossesRt, "that the first bosses are defeated.");
+console.log("It is "+ firstBossesRt, "that the first two bosses are defeated.");
 
 //calls number function, 1 argument --> playerNum
 var numberFunctionRt = numberFunction(playerNum);
