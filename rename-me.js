@@ -4,7 +4,7 @@
 //Story Title: "The Adventures of Mount Murrat." 
 
 //initial variables----------------------------------------------
-var groupNames = ["Andreies"," Porktornado"," Chellindae"," TheUglyStick"], 
+var groupNames = [" Andreies"," Porktornado"," TheUglyStick"," Chellindae"], 
 	storyTitle = "The Adventures of Mount Murrat.",
 	playerNum = 4;
 	
@@ -72,20 +72,46 @@ var stringFunction = function (a,b) {
 	
 	return mainChar + firstPart + secondPart + thirdPart;
 };
+
+
+
+//"array function" implementation
+var arrayFunction = function (a,b){
+	
+	//local variables
+	//use .length
+	var lengthGroupNames = groupNames.length,
+		deadPlayerNo = lengthGroupNames -1;
+	
+	for (var i = 0; i < lengthGroupNames -1; i++) {
+		console.log("The number of dead player is: "+deadPlayerNo);
+		deadPlayerNo --;
+		console.log("Chellindae resurrects " +groupNames[i]);	
+	}
+	//use .pop
+	groupNames.shift();
+	return groupNames;	
+};
 //---------------------------------------------------------------
 
 //calls first procedure, 1 argument
 var firstProcedureRt = firstProcedure(2);
 
 
-//calls boolean function, 2 arguments and catches the return value into the var. "FirstBossesRt"
+//calls boolean function, 2 arguments --> boss1, boss2
 var firstBossesRt = firstBosses("Anael","Grotesk");
 console.log("It is "+firstBossesRt, "that the first bosses are defeated.");
 
-//calls number function, 1 argument --> playerNum and catches the number of players left alive
+//calls number function, 1 argument --> playerNum
 var numberFunctionRt = numberFunction(playerNum);
 console.log("The number of players still alive is: "+numberFunctionRt);
 
-//calls string function, 2 arguments --> verb and location and catches the returned string
+//calls string function, 2 arguments --> verb, location
 var stringFunctionRt = stringFunction("looks","backpack");
 console.log(stringFunctionRt);
+
+//calls array function, 2 arguments -->numberFunctionRt, array 
+var arrayFunctionRt = arrayFunction(numberFunctionRt,groupNames);
+console.log("One member of the group got disconnected.");
+console.log("The players left in the group are:");
+console.log(""+arrayFunctionRt);
